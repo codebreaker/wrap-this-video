@@ -1,0 +1,6 @@
+[Contractor Entry]
+Name=Wrap this video
+Icon=video-x-generic
+Description=Create a new folder and move this file there
+MimeType=video
+Exec=wrap-this-video %f

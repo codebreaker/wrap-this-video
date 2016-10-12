@@ -1,0 +1,13 @@
+path=$(dirname "$1")
+filename=$(basename "$1")
+extension="${filename##*.}"
+justname="${filename%.*}"
+
+echo $justname
+echo $extension
+echo $path
+
+mkdir "$path/$justname"
+mv "$path/$filename" "$path/$justname/$filename" &&
+notify-send "Video file wrapped in folder" "$1 has been wrapped" -i "video-x-generic" ||
+notify-send "Error while wrapping video" "$1 is not wrapped" -i error
