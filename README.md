@@ -18,4 +18,4 @@ Copy the contract into a contractor directory and set ownership/permissions, i.e
 ```bash
 sudo cp wrap-this-video.contract /usr/share/contractor/
 sudo chown root:root /usr/share/contractor/wrap-this-video.contract
-sudo chmod 644 /usr/share/contractor/wrap-this-videowrap-this-video.contract
+sudo chmod 644 /usr/share/contractor/wrap-this-video.contract
